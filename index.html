@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define as configurações da viewport para dispositivos móveis -->
+    <title>Lista de Tarefas</title> <!-- Define o título da página, que aparece na aba do navegador -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Estabelece uma conexão antecipada com o domínio do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Estabelece uma conexão antecipada com o domínio de fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Inclui a fonte Roboto com pesos 400 e 700 -->
+    <link rel="stylesheet" href="./main.css"> <!-- Link para o arquivo de estilos CSS externo -->
+</head>
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+        <button type="button">Adicionar Tarefa</button>
+    </header>
+    <form id="form-tarefas">
+        <input type="text" id="nome-tarefa" required placeholder="Adicione uma tarefa"/>
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="botao-cancelar">Cancelar</button>
+    </form>
+    <div class="container">
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <th>Tarefa</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
