@@ -8,34 +8,17 @@ $(document).ready(function(){
     })
 })
 
-const form = document.getElementById('form-tarefas');
-const tarefa = [];
+$(document).ready(function() {
+    $('#tarefasForm').submit(function(event) {
+        event.preventDefault();
+        var taskText = $('#tarefaInput').val().trim();
+        if (taskText !== "") {
+            $('#listaTarefas').append('<li>' + taskText + '</li>');
+            $('#tarefaInput').val("");
+        }
+    });
 
-let linhas = '';
-
-form.addEventListener('submit', function (e){
-    e.preventDefault();
-
-    adicionaLinha();
-    atualizaTabela();
-})
-
-function adicionaLinha(){
-    const inputTarefa = document.getElementById('nome-tarefa');
-
-    tarefa.push(parseFloat(inputTarefa.value));
-
-    let linha = '<tr>';
-    linha += `<td>${inputTarefa.value}</td>`;
-    linha += '</tr>';
-
-    linhas += linha;
-
-    inputTarefa.value = '';
-    
-}
-
-function atualizaTabela(){
-    const corpoTabela = document.querySelector ('tbody');
-    corpoTabela.innerHTML = linhas;
-}
+    $('#listaTarefas').on('click', 'li', function() {
+        $(this).toggleClass('done');
+    });
+});
