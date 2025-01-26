@@ -10,7 +10,7 @@ header {
     padding: 16px 0;
     color: #ffffff;
     display: flex;
-    border-bottom: 16px solid;
+    border-bottom: 16px solid #000000;
     justify-content: center;
     text-transform: uppercase;
 }
