@@ -46,24 +46,35 @@ button {
 
 .container {
     max-width: 960px;
-    width: 100%;
+    width: 33%;
     margin: 0 auto;
 }
 
-table {
-    width: 100%;
+ul {
+    list-style-type: none;
 }
 
-table th {
-    border-bottom: 2px solid #000;
+ul h1 {
     padding: 16px;
     font-size: 24px;
     font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #000000;
 }
 
-table td {
+li {
     padding: 16px;
     text-align: center;
     font-size: 18px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+li:hover {
+    font-weight: bold;
+}
+
+li.done {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.5)
 }
