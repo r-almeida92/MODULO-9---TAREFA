@@ -1,80 +1,80 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão */
+    box-sizing: border-box; /* Inclui bordas no cálculo do tamanho total dos elementos */
+    font-family: 'Roboto', sans-serif; /* Define a fonte padrão como Roboto */
 }
 
 header {
-    background-color: #414141;
-    padding: 16px 0;
-    color: #ffffff;
-    display: flex;
-    border-bottom: 16px solid #000000;
-    justify-content: center;
-    text-transform: uppercase;
+    background-color: #414141; /* Cor de fundo do cabeçalho */
+    padding: 16px 0; /* Espaçamento interno do cabeçalho */
+    color: #ffffff; /* Cor do texto branco */
+    display: flex; /* Utiliza flexbox para o layout interno */
+    border-bottom: 16px solid #000000; /* Adiciona uma borda inferior preta */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    text-transform: uppercase; /* Deixa o texto em letras maiúsculas */
 }
 
 header button {
-    margin-left: 16px;
+    margin-left: 16px; /* Adiciona espaço à esquerda do botão no cabeçalho */
 }
 
 form {
-    background-color: #d3d3d3;
-    padding: 24px 0;
-    text-align: center;
-    display: none;
+    background-color: #d3d3d3; /* Cor de fundo do formulário */
+    padding: 24px 0; /* Espaçamento interno do formulário */
+    text-align: center; /* Centraliza o texto */
+    display: none; /* Esconde o formulário inicialmente */
 }
 
 input, 
 button {
-    padding: 8px;
+    padding: 8px; /* Espaçamento interno para campos de texto e botões */
 }
 
 button {
-    background-color: #f5bf03;
-    border: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
+    background-color: #f5bf03; /* Cor de fundo amarela dos botões */
+    border: none; /* Remove as bordas padrão */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-transform: uppercase; /* Texto em letras maiúsculas */
+    cursor: pointer; /* Altera o cursor para indicar clicável */
 }
 
 #botao-cancelar {
-    background-color: red;
-    color: #ffffff;
+    background-color: red; /* Cor de fundo vermelha para o botão de cancelar */
+    color: #ffffff; /* Cor do texto branca */
 }
 
 .container {
-    max-width: 960px;
-    width: 33%;
-    margin: 0 auto;
+    max-width: 960px; /* Largura máxima do contêiner */
+    width: 33%; /* Define a largura do contêiner como 33% da tela */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove os marcadores da lista */
 }
 
 ul h1 {
-    padding: 16px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    border-bottom: 2px solid #000000;
+    padding: 16px; /* Espaçamento interno do cabeçalho da lista */
+    font-size: 24px; /* Define o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-align: center; /* Centraliza o texto */
+    border-bottom: 2px solid #000000; /* Linha inferior */
 }
 
 li {
-    padding: 16px;
-    text-align: center;
-    font-size: 18px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+    padding: 16px; /* Espaçamento interno dos itens da lista */
+    text-align: center; /* Centraliza o texto dos itens */
+    font-size: 18px; /* Define o tamanho da fonte dos itens */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* Linha inferior translúcida */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
 }
 
 li:hover {
-    font-weight: bold;
+    font-weight: bold; /* Deixa o texto em negrito ao passar o mouse */
 }
 
 li.done {
-    text-decoration: line-through;
-    color: rgba(0, 0, 0, 0.5)
+    text-decoration: line-through; /* Adiciona um risco no texto para itens concluídos */
+    color: rgba(0, 0, 0, 0.5); /* Altera a cor para cinza claro */
 }
