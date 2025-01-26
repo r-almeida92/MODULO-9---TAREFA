@@ -17,13 +17,13 @@ form.addEventListener('submit', function (e){
     e.preventDefault();
 
     adicionaLinha();
-    atualizaTabela;
+    atualizaTabela();
 })
 
 function adicionaLinha(){
     const inputTarefa = document.getElementById('nome-tarefa');
 
-    tarefa.push(inputTarefa.value);
+    tarefa.push(parseFloat(inputTarefa.value));
 
     let linha = '<tr>';
     linha += `<td>${inputTarefa.value}</td>`;
@@ -37,5 +37,5 @@ function adicionaLinha(){
 
 function atualizaTabela(){
     const corpoTabela = document.querySelector ('tbody');
-    corpoTabela.innerHTML = Linhas;
+    corpoTabela.innerHTML = linhas;
 }
